@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="The personal portfolio of Okopi Ebo Joy, an aspiring software engineer passionate about Python, Go and web development.">
+    <meta name="description"
+        content="Portfolio of Okopi Ebo Joy, an aspiring software engineer passionate about Python, Go, AI and web development.">
 
-    <title>Okopi Ebo Joy | Portfolio</title>
+    <meta name="author" content="Okopi Ebo Joy">
+
+    <title>Okopi Ebo Joy | Software Engineer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,215 +20,341 @@
 
     <!-- Navigation -->
     <header>
-        <h2>JOY.</h2>
 
-        <nav>
+        <a href="#home" class="logo">JOY<span>.</span></a>
+
+        <nav aria-label="Main navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <a href="#contact" class="nav-button">Let's Talk</a>
+
     </header>
 
 
     <!-- Home Section -->
-    <section id="home">
+    <main>
 
-        <h1>Hello, I'm Okopi Ebo Joy</h1>
+        <section id="home" class="hero">
 
-        <h2>Aspiring Software Engineer</h2>
+            <div class="hero-content">
 
-        <p>
-            I am passionate about technology,
-            programming and building useful
-            software solutions.
-        </p>
+                <p class="intro">HELLO, WELCOME TO MY PORTFOLIO</p>
 
-        <a href="#projects">Explore My Projects</a>
+                <h1>
+                    Hi, I'm <span>Okopi Ebo Joy.</span>
+                </h1>
 
-        <a href="cv.pdf" download>Download My CV</a>
+                <h2>Aspiring Software Engineer</h2>
 
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <div class="about-content">
-
-            <div class="about-text">
-
-                <h3>Building, Learning and Growing as a Developer.</h3>
-
-                <p>
-                    My name is Okopi Ebo Joy. I am an aspiring software engineer
-                    passionate about technology, problem-solving and building
-                    solutions that make a difference.
+                <p class="hero-description">
+                    I build practical software solutions, explore new technologies
+                    and turn ideas into meaningful digital experiences.
+                    I'm passionate about Python, Go, web development
+                    and the future of AI.
                 </p>
 
-                <p>
-                    My programming journey has introduced me to Python,
-                    Go, web development and software engineering concepts.
-                    I enjoy learning by building practical projects,
-                    solving problems and continuously improving my skills.
-                </p>
+                <div class="hero-buttons">
 
-                <p>
-                    My goal is to become an AI-native software engineer
-                    capable of developing useful, reliable and innovative
-                    software solutions.
-                </p>
+                    <a href="#projects" class="primary-button">
+                        Explore My Projects
+                    </a>
+
+                    <a href="cv.pdf" download class="secondary-button">
+                        Download My CV
+                    </a>
+
+                </div>
+
+                <div class="hero-socials">
+
+                    <a href="https://github.com/Eb594"
+                        target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                        target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
 
-    </section>
+            <!-- Profile Picture -->
+            <div class="hero-image">
 
+                <img src="images/profile.jpg"
+                    alt="Portrait of Okopi Ebo Joy">
 
-    <!-- Skills Section -->
-    <section id="skills">
+            </div>
 
-        <h2>My Skills</h2>
-
-        <p>Python</p>
-        <p>Go (Golang)</p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JavaScript</p>
-        <p>Git and GitHub</p>
-
-    </section>
+        </section>
 
 
-    <!-- Projects Section -->
-    <section id="projects">
+        <!-- About Section -->
+        <section id="about" class="about">
 
-        <h2>My Projects</h2>
+            <p class="section-label">GET TO KNOW ME</p>
 
-        <div class="project-container">
+            <h2>About Me</h2>
 
-            <div class="project-card">
+            <div class="about-content">
 
-                <h3>WasteLess</h3>
+                <div class="about-text">
 
-                <p>
-                    A food-surplus marketplace that connects food vendors
-                    with customers to reduce food waste.
-                </p>
+                    <h3>
+                        Building, Learning and Growing as a Developer.
+                    </h3>
 
-                <p class="tech">
-                    Python | Flask | SQLite | HTML | CSS
-                </p>
+                    <p>
+                        My name is Okopi Ebo Joy. I am an aspiring software
+                        engineer passionate about technology, problem-solving
+                        and building solutions that make a difference.
+                    </p>
 
-                <a href="https://github.com/Eb594/WasteLess" target="_blank" rel="noopener noreferrer">
-                    View Project
+                    <p>
+                        My programming journey has introduced me to Python,
+                        Go, web development and software engineering concepts.
+                        I enjoy learning by building practical projects,
+                        solving problems and continuously improving my skills.
+                    </p>
+
+                    <p>
+                        Through hands-on projects, I have gained experience
+                        working with databases, application development,
+                        version control and software testing.
+                    </p>
+
+                    <p>
+                        My goal is to become an AI-native software engineer
+                        capable of developing useful, reliable and innovative
+                        software solutions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+
+            <p class="section-label">WHAT I WORK WITH</p>
+
+            <h2>My Technical Skills</h2>
+
+            <p class="section-description">
+                Technologies and tools I use while learning and building
+                software projects.
+            </p>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python</p>
+                    <p>Go (Golang)</p>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Flask</p>
+                    <p>Next.js</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git</p>
+                    <p>GitHub</p>
+                    <p>SQLite</p>
+                    <p>Supabase</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Development Practices</h3>
+                    <p>Problem Solving</p>
+                    <p>Software Testing</p>
+                    <p>JSON Data Handling</p>
+                    <p>Version Control</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+
+            <p class="section-label">MY WORK</p>
+
+            <h2>Featured Projects</h2>
+
+            <p class="section-description">
+                A selection of projects that demonstrate my learning,
+                creativity and practical software development experience.
+            </p>
+
+            <div class="project-container">
+
+
+                <!-- WasteLess -->
+                <div class="project-card">
+
+                    <div class="project-number">01</div>
+
+                    <h3>WasteLess</h3>
+
+                    <p>
+                        A food-surplus marketplace that connects food vendors
+                        with customers, helping reduce food waste by making
+                        surplus food available at discounted prices.
+                    </p>
+
+                    <p class="tech">
+                        Python | Flask | SQLite | HTML | CSS
+                    </p>
+
+                    <a href="https://github.com/Eb594/WasteLess"
+                        target="_blank" rel="noopener noreferrer">
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- TournamentLab -->
+                <div class="project-card">
+
+                    <div class="project-number">02</div>
+
+                    <h3>TournamentLab</h3>
+
+                    <p>
+                        A Python-based tournament management application
+                        that automatically generates fixtures, records
+                        match results, calculates team standings and
+                        determines tournament champions.
+                    </p>
+
+                    <p class="tech">
+                        Python | JSON | Unit Testing
+                    </p>
+
+                    <a href="https://github.com/Eb594"
+                        target="_blank" rel="noopener noreferrer">
+                        View GitHub Profile →
+                    </a>
+
+                </div>
+
+
+                <!-- CampusFlow -->
+                <div class="project-card">
+
+                    <div class="project-number">03</div>
+
+                    <h3>CampusFlow</h3>
+
+                    <p>
+                        A software project developed with an emphasis
+                        on clean code organisation, application structure
+                        and automated testing.
+                    </p>
+
+                    <p class="tech">
+                        Python | Software Testing
+                    </p>
+
+                    <a href="https://github.com/Eb594/campus-flow_0240"
+                        target="_blank" rel="noopener noreferrer">
+                        View Project →
+                    </a>
+
+                </div>
+
+
+                <!-- SkillPass Africa -->
+                <div class="project-card">
+
+                    <div class="project-number">04</div>
+
+                    <h3>SkillPass Africa</h3>
+
+                    <p>
+                        A platform designed to help people demonstrate
+                        their skills, showcase their abilities and
+                        access opportunities.
+                    </p>
+
+                    <p class="tech">
+                        Next.js | TypeScript | Supabase
+                    </p>
+
+                    <a href="https://github.com/Stonez-Digital/skillpass-africa"
+                        target="_blank" rel="noopener noreferrer">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>Let's Build Something Together.</h2>
+
+            <p>
+                I am open to learning opportunities, collaborations,
+                internships and conversations about software development.
+            </p>
+
+            <div class="social-links">
+
+                <a href="mailto:Okopijoy575@gmail.com">
+                    Email Me
+                </a>
+
+                <a href="https://github.com/Eb594"
+                    target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                    target="_blank" rel="noopener noreferrer">
+                    LinkedIn
                 </a>
 
             </div>
 
+        </section>
 
-            <div class="project-card">
-
-                <h3>TournamentLab</h3>
-
-                <p>
-                    A Python tournament management application that
-                    generates fixtures, records results and calculates standings.
-                </p>
-
-                <p class="tech">
-                    Python | JSON
-                </p>
-
-                <a href="https://github.com/Eb594" target="_blank" rel="noopener noreferrer">
-                    View GitHub Profile
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>CampusFlow</h3>
-
-                <p>
-                    A Python project developed with an emphasis on
-                    software structure and automated testing.
-                </p>
-
-                <p class="tech">
-                    Python | Testing
-                </p>
-
-                <a href="https://github.com/Eb594/campus-flow_0240" target="_blank" rel="noopener noreferrer">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>SkillPass Africa</h3>
-
-                <p>
-                    A platform designed to help people demonstrate
-                    their skills and access opportunities.
-                </p>
-
-                <p class="tech">
-                    Next.js | TypeScript | Supabase
-                </p>
-
-                <a href="https://github.com/Stonez-Digital/skillpass-africa" target="_blank" rel="noopener noreferrer">
-                    View Project
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-
-        <h2>Let's Connect</h2>
-
-        <p>
-            I am open to learning opportunities, collaborations
-            and conversations about software development.
-        </p>
-
-        <div class="social-links">
-
-            <a href="mailto:Okopijoy575@gmail.com">
-                Email Me
-            </a>
-
-            <a href="https://github.com/Eb594" target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
-
-        </div>
-
-    </section>
+    </main>
 
 
     <!-- Footer -->
     <footer>
 
         <p>
-            &copy; 2026 Okopi Ebo Joy. All rights reserved.
+            &copy; 2026 Okopi Ebo Joy. Built with passion and curiosity.
         </p>
 
     </footer>
@@ -236,3 +366,4 @@
 </body>
 
 </html>
+```
